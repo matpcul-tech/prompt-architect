@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 /* ═══════════════════════════════════════════════════════════
    STORAGE LAYER — localStorage for browser persistence
@@ -386,6 +387,7 @@ export default function App() {
 
         <footer style={{marginTop:48,textAlign:"center",padding:"20px 0",borderTop:"1px solid var(--border)"}}><p style={{fontSize:11,color:"var(--text3)",fontFamily:"var(--mono)"}}>Prompt Architect — Built for the next generation of AI-native workers</p></footer>
       </div>
+      <Analytics />
     </div>
   );
 }
